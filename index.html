@@ -50,7 +50,7 @@
 	}
 </script>
 
-  <link rel="icon" type="image/x-icon" href="static/images/icons8-swim-48.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -77,7 +77,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Active Transfer Learning for Efficient Video-Specific Human Pose Estimation</h1>
+            <h1 class="title is-1 publication-title">Physical Plausibility-aware Trajectory Prediction via Locomotion Embodiment</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -138,7 +138,7 @@
           type="image/gif">
         <p>Available browser only</p>
       </video> -->
-      <img src="static/videos/compare.gif" alt="Results of our method" width="720">
+      <img src="static/images/head.png" alt="Idea of our method" width="720">
       <h2 class="subtitle has-text-centered">
         Overview of our method. Unlike existing methods, which often predict physically implausible trajectories, our framework uses locomotion generation in a physics simulator to incorporate the laws of physics to HTP by training the plausibility score as the consistency between the observed 3D pose and future possible trajectories. Additionally, at inference, our method can evaluate predicted trajectories to filter out implausible ones.
       </h2>
@@ -158,12 +158,12 @@
             Humans can predict future human trajectories even from momentary observations by using human pose-related cues. However, previous Human Trajectory Prediction (HTP) methods leverage the pose cues implicitly, resulting in implausible predictions. To address this, we propose Locomotion Embodiment, a framework that explicitly evaluates the physical plausibility of the predicted trajectory by locomotion generation under the laws of physics. While the plausibility of locomotion is learned with an indifferentiable physics simulator, it is replaced by our differentiable Locomotion Value function to train an HTP network in a data-driven manner. In particular, our proposed Embodied Locomotion loss is beneficial for efficiently training a stochastic HTP network using multiple heads. Furthermore, the Locomotion Value filter is proposed to filter out implausible trajectories at inference. Experiments demonstrate that our method enhances even the state-of-the-art HTP methods across diverse datasets and problem settings.
           </p>
         </div>
-        <div>
+<!--         <div>
           <img src="static/images/overview.png" alt="Overview of our Video-Specific Active Transfer Learning." width="960"/>
           <h2 class="subtitle has-text-centered">
             Overview of our Video-Specific Active Transfer Learning.
           </h2>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -182,23 +182,30 @@
         <img src="static/images/overview.png" alt="Overview of our Video-Specific Active Transfer Learning."/>
       </div> -->
       <div class="item" style="text-align: center;">
-        <img src="static/images/selection.png" alt="Selected Samples."/>
+        <img src="static/images/overview.png" alt="Overview of our framework."/>
         <h2 class="subtitle has-text-centered">
-          Comparison of selected samples by existing methods (a) MPE, (b) Core-Set, and (c) Ours. Our method can effectively select uncertain and representative samples in a query video.
+          The overview of our proposed framework.
         </h2>
       </div>
       <div class="item" style="text-align: center;">
         <!-- Your image here -->
-        <img src="static/images/THC.png" alt="Temporal Heatmap Continuity"/>
+        <img src="static/images/locoval.png" alt="Training of our LocoVal function."/>
         <h2 class="subtitle has-text-centered">
-          Uncertainty estimation results by the proposed Temporal Heatmap Continuity (THC) criterion.
+          Training of our LocoVal function.
         </h2>
       </div>
       <div class="item" style="text-align: center;">
         <!-- Your image here -->
-        <img src="static/images/WPU.png" alt="Whole-body Pose Unnaturalness"/>
+        <img src="static/images/htp.png" alt="Training of the HTP network with our EmLoco loss."/>
         <h2 class="subtitle has-text-centered">
-          An overview of the proposed Whole-body Pose Unnaturalness (WPU) criterion.
+          Training of the HTP network with our EmLoco loss.
+        </h2>
+      </div>
+      <div class="item" style="text-align: center;">
+        <!-- Your image here -->
+        <img src="static/images/multi.png" alt="Training of the stochastic HTP network with our EmLoco loss."/>
+        <h2 class="subtitle has-text-centered">
+          The difference in training of the stochastic HTP network between (a) existing methods and (b) the proposed method with our EmLoco loss.
         </h2>
       </div>
       </div>
