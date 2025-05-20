@@ -132,7 +132,7 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body" style="text-align: center;">
+    <div class="hero-body" style="text-align: center; justify-content: center; display: flex;">
 <!--       <video poster="" id="tree" autoplay controls muted loop height="630" width="1200">
         <source src="static/videos/compare.mp4"
           type="image/gif">
@@ -158,12 +158,6 @@
             Humans can predict future human trajectories even from momentary observations by using human pose-related cues. However, previous Human Trajectory Prediction (HTP) methods leverage the pose cues implicitly, resulting in implausible predictions. To address this, we propose Locomotion Embodiment, a framework that explicitly evaluates the physical plausibility of the predicted trajectory by locomotion generation under the laws of physics. While the plausibility of locomotion is learned with an indifferentiable physics simulator, it is replaced by our differentiable Locomotion Value function to train an HTP network in a data-driven manner. In particular, our proposed Embodied Locomotion loss is beneficial for efficiently training a stochastic HTP network using multiple heads. Furthermore, the Locomotion Value filter is proposed to filter out implausible trajectories at inference. Experiments demonstrate that our method enhances even the state-of-the-art HTP methods across diverse datasets and problem settings.
           </p>
         </div>
-<!--         <div>
-          <img src="static/images/overview.png" alt="Overview of our Video-Specific Active Transfer Learning." width="960"/>
-          <h2 class="subtitle has-text-centered">
-            Overview of our Video-Specific Active Transfer Learning.
-          </h2>
-        </div> -->
       </div>
     </div>
   </div>
@@ -181,34 +175,34 @@
 <!--       <div class="item" style="text-align: center;">
         <img src="static/images/overview.png" alt="Overview of our Video-Specific Active Transfer Learning."/>
       </div> -->
-      <div class="item" style="text-align: center;">
+      <div class="item" style="text-align: center; justify-content: center; display: flex;">
         <img src="static/images/overview.png" alt="Overview of our framework." width="100%"/>
         <h2 class="subtitle has-text-centered">
           The overview of our proposed framework.
         </h2>
       </div>
-      <div class="item" style="text-align: center;">
+      <div class="item" style="text-align: center; justify-content: center; display: flex;">
         <!-- Your image here -->
         <img src="static/images/locoval.png" alt="Training of our LocoVal function." width="100%"/>
         <h2 class="subtitle has-text-centered">
           Training of our LocoVal function.
         </h2>
       </div>
-      <div class="item" style="text-align: center;">
+      <div class="item" style="text-align: center; justify-content: center; display: flex;">
         <!-- Your image here -->
         <img src="static/images/htp.png" alt="Training of the HTP network with our EmLoco loss." width="100%"/>
         <h2 class="subtitle has-text-centered">
           Training of the HTP network with our EmLoco loss.
         </h2>
       </div>
-      <div class="item" style="text-align: center;">
+      <div class="item" style="text-align: center; justify-content: center; display: flex;">
         <!-- Your image here -->
         <img src="static/images/multi.png" alt="Training of the stochastic HTP network with our EmLoco loss." width="100%"/>
         <h2 class="subtitle has-text-centered">
           The difference in training of the stochastic HTP network between (a) existing methods and (b) the proposed method with our EmLoco loss.
         </h2>
       </div>
-      <div class="item" style="text-align: center;">
+      <div class="item" style="text-align: center; justify-content: center; display: flex;">
         <!-- Your image here -->
         <img src="static/images/filter.png" alt="Based on the estimated locomotion values, our LocoVal filter rejects implausible trajectories." width="100%"/>
         <h2 class="subtitle has-text-centered">
@@ -253,28 +247,28 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
-      	<div class="item" style="text-align: center;">
+      	<div class="item" style="text-align: center; justify-content: center; display: flex;">
 	        <!-- Your image here -->
 	        <img src="static/images/momentary.png" alt="HTP results with momentary observations." width="100%"/>
 	        <h2 class="subtitle has-text-centered">
 	          HTP results with momentary observations.
 	        </h2>
       	</div>
-      	<div class="item" style="text-align: center;">
+      	<div class="item" style="text-align: center; justify-content: center; display: flex;">
 	        <!-- Your image here -->
 	        <img src="static/images/multi_pred.png" alt="HTP results with multiple heads." width="100%"/>
 	        <h2 class="subtitle has-text-centered">
 	          HTP results with multiple heads.
 	        </h2>
       	</div>
-      	<div class="item" style="text-align: center;">
+      	<div class="item" style="text-align: center; justify-content: center; display: flex;">
 	        <!-- Your image here -->
 	        <img src="static/images/score.png" alt="Locomotion value estimation by our LocoVal function." width="100%"/>
 	        <h2 class="subtitle has-text-centered">
 	          Locomotion value estimation by our LocoVal function.
 	        </h2>
       	</div>
-      	<div class="item" style="text-align: center;">
+      	<div class="item" style="text-align: center; justify-content: center; display: flex;">
 	        <!-- Your image here -->
 	        <img src="static/images/eth_filter.png" alt="An example of LocoVal filtering on the real-world image." width="100%"/>
 	        <h2 class="subtitle has-text-centered">
@@ -294,7 +288,8 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title">Poster</h2>
-      <img src="static/images/poster_v2.png" alt="Poster." width="100%"/>
+      <iframe  src="static/pdfs/CVPR2025-EmLoco-poster.pdf" width="100%">
+          </iframe>
       </div>
     </div>
   </section>
